@@ -13,7 +13,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "esbuild:browser": "esbuild src/index.ts --minify --bundle --outfile=build/index.min.js --global-name=ensAvatar",
+    "esbuild:browser": "esbuild src/index.ts --minify --bundle --outfile=browser-build/index.min.js --global-name=ensAvatar",
     "build:demo": "node ./example/build.js",
     "test": "tsdx test",
     "lint": "tsdx lint",
