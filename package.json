@@ -13,6 +13,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
+    "esbuild:browser": "esbuild src/index.ts --minify --bundle --outfile=browser-build/index.min.js --global-name=ensAvatar",
     "build:demo": "node ./example/build.js",
     "test": "tsdx test",
     "lint": "tsdx lint",
@@ -58,7 +59,7 @@
     "@types/jsdom": "^16.2.14",
     "@types/url-join": "^4.0.1",
     "dotenv": "^16.0.0",
-    "esbuild": "^0.14.21",
+    "esbuild": "^0.14.54",
     "husky": "^7.0.4",
     "nock": "^13.2.2",
     "size-limit": "^7.0.5",
